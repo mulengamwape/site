@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>
+        Home Page
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    *, *::before, *::after {
+  box-sizing: border-box;}
+
+        body,html
+        {
+            margin: 0;padding: 0;width: 100%;height:100dvh; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        body
+        {
+        display: flex;
+        flex-direction: column;
+        }
+        @media (max-width: 600px) {
+            .main2  {
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            .widget1
+            {
+                width:90%;
+                display: flex;
+                flex-direction: column;
+            }
+        
+
+        }
+
+        .header
+        {
+            width:100%;
+            background-color: rgb(5, 5, 5);
+            position: sticky;
+            display: flex;
+            min-height: 10%;
+            padding: 0px;
+            margin: 0;
+            top:0;
+            z-index: 100;
+        }
+        .footer
+        {
+            width:100%;
+            background-color: rgb(5, 5, 5);
+            color: azure;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 24vh;
+            padding: 0px;
+            margin: 0;
+            bottom:0px;
+            z-index: 100;
+            margin-top: auto;
+            padding: 10px;
+        
+
+        }
+        .footer-button
+        {
+            
+        }
+        .footer-button:hover
+        {
+            text-decoration: underline;
+            cursor:pointer;
+            
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+        .button,.button2,.button3,.button4,.button5,.button6,.button7
+        {
+          
+            transition:0.5s;
+            background-color: #5c274dff;
+            border-width: 1px;
+            border-color: rgba(0, 0, 0, 0.5);
+            border-style: solid;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            font-size: 13px;
+            color: azure;
+            min-width: 80px;  
+            max-height: 40px;
+            
+           
+           
+            margin: 13px;
+            max-width: 80px;  
+            min-height: 30px;
+                  justify-content: center;
+            align-items: center;
+
+            
+        }
+
+
+.button7
+        {
+          
+            transition:0.5s;
+            background-color: rgb(38, 72, 134);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            font-size: 13px;
+            color: azure;
+            max-width: 80px;  
+            min-height: 30px;
+            
+           
+           
+           
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+
+        .view
+        {
+            display: flex;
+             justify-content: center;
+            align-items: center;
+    
+        }
+
+
+        .button5
+        {
+             transition:0.5s;
+            background-color: #567373ff;
+            border-width: 1px;
+            border-color: rgba(0, 0, 0, 0.5);
+            border-style: solid;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            font-size: 13px;
+            color: azure;
+            
+           
+           
+            margin: 13px;
+            min-width: 18%;
+            justify-content: center;
+            align-items: center;
+
+        }
+                .cancel
+        {
+           
+             transition: 1s;
+        }
+        .cancel:hover
+        {
+             box-shadow: 2px 2px 10px #5c274dff;
+             transition: 0.5s;
+        }
+        .stars
+        {
+             align-self: center ;font-size: 15px;
+        }
+.button6 {
+  width: auto;          /* shrink to fit content */
+  min-width: 80px;      /* safe minimum */
+  /* consistent spacing */
+  align-self: center 
+     ;
+    ; /* stay inside parent */
+}
+        .bbs
+        {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 50%;
+            justify-content: flex-end;
+    
+        }
+        .logo
+        {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 50%;
+            
+
+        }
+        .lg
+        {
+            transition:0.5s;
+        
+        }
+        .lg:hover
+        {
+            box-shadow: 2px 2px 10px #5c274dff;
+            transition:0.5s;
+            background-color: rgb(219, 219, 219);
+        }
+        .button:hover,.button2:hover,.button3:hover,.button4:hover,.button5:hover,.button6:hover,.button7:hover
+        {
+            transition:0.5s;
+           
+            background-color: rgb(255, 255, 255);
+
+            border-radius: 12px;
+            color: #5c274dff;
+            box-shadow: 2px 2px 10px #5c274dff;
+            
+           
+
+
+        }
+
+        
+
+.main2
+        {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            justify-content: space-between;
+            overflow: scroll;
+            padding:13px 0px;
+            
+        
+        }
+        .popular-hotels
+        {
+            
+        }
+.top {
+        /* half of the parent if you want */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  height: 30vh;
+  min-height: 220px;
+  
+
+
+ /* keeps image inside */
+}
+  .bottom {
+  color: #5c274dff;
+  display: flex;
+  flex-direction: column;  
+  align-content: space-around; 
+    height: 30vh;
+  min-height: 220px; 
+  width: auto;   
+  justify-content: space-around;
+  
+}
+.widget1
+{
+    background-color: rgb(234, 234, 234);border-radius: 20px; border:0.5px rgba(75, 75, 75, 0.507) solid;
+    transition:0.5s; max-width: fit-content; max-height: fit-content;margin: 0px 13px;
+}
+
+.main2 .top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or cover, depending on effect */
+  border-top-left-radius: 20px;border-top-right-radius: 20px;
+
+}
+
+
+.stars
+{
+    text-align: center;
+}
+.widget1:hover
+{
+    box-shadow: 1px 1px 8px #5c274dff;
+    transition:0.5s;
+}
+        .main1{
+            background-image: url("horizon-sky-sunset-skyline-night-morning-326934-pxhere.com.jpg");
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 10%;
+            min-height:50vh;
+            display: flex;
+            padding-top: 30px;
+            padding-left: 50px;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+.main3 {
+  display: flex;
+  flex-wrap: wrap;    /* allows items to wrap to new line */
+  justify-content: space-around;
+  margin-bottom: 0;
+  background-color: rgb(234, 234, 234);
+  height: 20dvh;
+}
+
+
+        .welcome
+        {
+            width:50%
+        }
+    
+         @media (max-width: 600px) {
+            body
+            {
+                height: auto;
+            }            
+            .main2  {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+               
+                
+            }
+                    .button:hover:active,.button2:hover:active,.button3:hover:active,.button4:hover:active,.button5:hover:active,.button6:hover:active,.button7:hover:active
+        {
+            transition:0.5s;
+           
+            background-color: rgb(255, 255, 255);
+
+            border-radius: 12px;
+            color: #5c274dff;
+            box-shadow: 2px 2px 10px #5c274dff;
+            
+           
+
+
+        }
+            .widget1
+            {
+                margin:13px 0px;
+            }
+
+        
+
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class ="header">
+        <div class = "logo">
+            <img src="Simple-S-modern-logo-design-Graphics-10500913-1.png" width = "90px" style="cursor: pointer;" class = "lg">
+        </div>
+        <div class = "bbs">
+            <div class = "button"><a>Home</a></div>
+            <div class = "button2">Hotels</div>
+            <div class = "button3">About</div>
+            <div class = "button4">Support</div>
+            <div class = "button5">Login</div>
+        </div>
+
+    </div>
+
+    <div class="main1">
+        
+          <div style="font-size: 40px;max-width: 50%;color: aliceblue; max-height: 70%;">
+            <p>Find your next stay</p>
+        </div>
+
+          <div style="width: 50%;background-color: white;align-self: center; margin-top:20%; margin-bottom: 5%;height: 50px;"></div>
+    </div>
+    <div style="font-size: 40px;color: rgb(0, 42, 79);display: flex; justify-content: center; margin: 20px; font-weight: bold;">
+        <p>Popular Hotels &#9776;</p>
+    </div>
+            
+
+    <div class = "main2">
+
+        <div class = "widget1">
+            <div class="top">
+                <img src="63d096e0c8a611edaedd0a58a9feac02.webp" alt="Hotel image">
+            </div>
+            <div class = "bottom">
+                <div><h2 style="margin: 0;text-align: center;height: 56px;">Le Méridien</h2></div>
+                <div class = "button6">
+                    RM 660
+                </div>
+                <p class="stars">&#10026;&#10026;&#10026;&#10026;&#10026;</p>
+                
+        
+            </div>
+        </div>
+        <div class = "widget1">
+            <div class = "top">
+                <img src ="09a7d3a0dd7d11ecab8b0a58a9feac02.webp" alt = "mlm">
+                </div>
+            <div class = "bottom">
+                <div><h2 style="margin: 0;text-align: center;height: 56px;">Berjaya Times Square</h2></div>
+                <div class = "button6" >
+                    RM 660
+                </div>
+                <div>
+                <p class="stars">&#10026;&#10026;&#10026;&#10026;&#10026;</p></div>
+                
+            </div>
+        </div>
+        <div class = "widget1">
+            <div class = "top">
+                <img src ="201903251245142763-5db37280-bddc-47a7-b058-4b8c8fe1c52b.jpg" alt = "mlm"> 
+            </div>
+            <div class = "bottom">
+                <div><h2 style="margin: 0;text-align: center;height: 56px;">The Kuala Lumpur Journal</h2></div>
+                
+                <div class = "button6" >
+                    RM 850
+                </div>
+                <div>
+                     <p class="stars">&#10026;&#10026;&#10026;&#10026;&#10026;</p>      
+               
+                </div>
+               
+            </div>
+        </div>
+
+    
+
+    </div>
+
+               <div class = "view">
+
+<div class = "button7">
+                    View More
+                </div>
+
+               </div> 
+        
+   
+
+    <div class = "main3" style="color: #5c274dff; margin: 0 20px;">
+        <div style="display: flex;flex-direction: row;">
+            <h2 style="padding: 0;margin: 0;">Why book with us?</h2>
+            <div class = "cancel" style="border-top: rgb(106, 106, 106) 1px solid; border-left: rgb(122, 122, 122) 1px solid; margin: 5px;padding: 3px;">
+            <h3 style = "margin: 0; margin-bottom: 4px;">Free Cancellations</h3><p>Enjoy free cancellations on us &#10006;</p>
+        </div>
+        <div  class ="cancel" style="border-top: rgb(106, 106, 106) 1px solid; border-left: rgb(122, 122, 122) 1px solid; margin: 5px;padding: 3px;">
+            <h3 style = "margin: 0; margin-bottom: 4px;">Discounts</h3><p>We find the best deals &#37;</p>
+        </div>
+         <div class ="cancel" style="border-top: rgb(106, 106, 106) 1px solid; border-left: rgb(122, 122, 122) 1px solid; margin: 5px;padding: 3px;"> 
+            <h3 style = "margin: 0; margin-bottom: 4px;">Support</h3><p>Quick response to any queries and issues &#9743;</p>
+        </div>
+        </div>
+
+    </div>
+ 
+
+
+
+
+
+
+
+<div class = "footer">
+          <div style="display: flex; flex-direction: row; justify-content: space-around;">
+             <div class = "footer-button">
+            Home
+        </div>
+        <div class = "footer-button">
+            Hotels
+        </div>
+         <div class = "footer-button">
+            About
+        </div>
+         <div class = "footer-button">
+            Support
+        </div>
+          </div> 
+
+             <div style="align-self: center;"><img src="Simple-S-modern-logo-design-Graphics-10500913-1.png" width = "150px"></div>
+        
+</div>
+    
+
+</body>
+</html>
